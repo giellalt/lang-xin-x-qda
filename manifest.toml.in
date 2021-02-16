@@ -2,7 +2,7 @@ name = "Guazacapán"
 version = "@SPELLERVERSION@"
 
 [macos]
-system_pkg_id = "no.divvun.MacDivvun.qda"
+system_pkg_id = "no.divvun.MacDivvun.xin-x-qda"
 
 [windows]
 system_product_code = "{REPLACE_WITH_REAL_SYSTEM_PROD_CODE}_is1"

@@ -5,14 +5,14 @@ This repository contains finite state source files for the Guazacapán language,
 for building morphological analysers, proofing tools
 and dictionaries. The data and implementation are licenced under GPLv3
 licence, also detailed in the
-[LICENCE](https://github.com/giellalt/lang-qda/blob/develop/LICENCE). The
+[LICENCE](https://github.com/giellalt/lang-xin-x-qda/blob/develop/LICENCE). The
 authors named in the AUTHORS file are available to grant other licencing
 choices.
 
-[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-qda)](https://github.com/giellalt/lang-qda/issues)
- [![Build Status](https://github.com/giellalt/lang-qda/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-qda/actions)
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-xin-x-qda)](https://github.com/giellalt/lang-xin-x-qda/issues)
+ [![Build Status](https://github.com/giellalt/lang-xin-x-qda/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-xin-x-qda/actions)
 
-Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-qda)
+Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-xin-x-qda)
 for the Guazacapán language by using the [Divvun Installer](http://divvun.no)
 (some languages are only available via the nightly channel).
 
@@ -21,7 +21,7 @@ Documentation
 
 Documentation can be found at:
 
--   <https://giellalt.uit.no/lang/qdadoc/index.html>
+-   <https://giellalt.uit.no/lang/xin-x-qdadoc/index.html>
 -   <https://giellalt.uit.no/index.html>
 
 Core dependencies
@@ -65,18 +65,18 @@ Downloading
 
 Using Git:
 ```
-git clone https://github.com/giellalt/lang-qda
+git clone https://github.com/giellalt/lang-xin-x-qda
 ```
 
 Using Subversion:
 ```
-svn checkout https://github.com/giellalt/lang-qda.git/trunk lang-qda
+svn checkout https://github.com/giellalt/lang-xin-x-qda.git/trunk lang-xin-x-qda
 ```
 
 Building and installation
 -------------------------
 
-[INSTALL](https://github.com/giellalt/lang-qda/blob/develop/INSTALL)
+[INSTALL](https://github.com/giellalt/lang-xin-x-qda/blob/develop/INSTALL)
 describes the GNU build system in detail, but for most users it is the usual:
 
 ```sh
