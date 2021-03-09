@@ -1,0 +1,20 @@
+!Complete list of all the uninflectable words. 2 types.
+
+LEXICON Particles
+    Nominalparticles ;
+    Verbalparticles ;
+
+LEXICON Nominalparticles
+kumu # ;
+ki' # ;
+na # ;
+
+LEXICON Verbalparticles
+pe' # ;
+wa # ;
+wan # ;
+i # ;
+pero # ;
+o # ;
+palh # ;
+nalh # ;

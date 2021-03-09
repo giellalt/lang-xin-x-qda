@@ -1,149 +1,108 @@
-! Divvun & Giellatekno - open source grammars for Guazacapán language
-! Copyright © 2015 The University of Tromsø & the Norwegian Sámi Parliament
-! http://giellatekno.uit.no & http://divvun.no
-!
-! This program is free software; you can redistribute and/or modify
-! this file under the terms of the GNU General Public License as published by
-! the Free Software Foundation, either version 3 of the License, or
-! (at your option) any later version. The GNU General Public License
-! is found at http://www.gnu.org/licenses/gpl.html. It is
-! also available in the file $GTHOME/LICENSE.txt.
-!
-! Other licensing options are available upon request, please contact
-! giellatekno@uit.no or feedback@divvun.no
+Multichar_Symbols
+!=========!
+!==VERBS==!
+!=========!
 
-! ========================================================================== !
-! !!            !!!Guazacapán morphological analyser                      !
-! ========================================================================== !
-!! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Guazacapán LANGUAGE.
- 
+!Flags for verbs
+@U.TV.NO@
+@U.TV.YES@
+@U.NOM.YES@
+@U.NOM.NO@
+@U.COMP.YES@
+@U.COMP.NO@
+@U.ActIV.YES@
+@U.ActIV.NO@
+@U.Pref.YES@
+@U.Pref.NO@
+@U.VERB.YES@
+@U.VERB.NO@
+@U.DERIV.YES@
+@U.DERIV.NO@
 
-Multichar_Symbols  !!≈ !!!Definitions for @CODE@
+!=Agreement for verbs=!
+!SETA
+-1sg.comp -2sg.comp -3sg.comp -1pl.comp -2pl.comp -3pl.comp
+-n' -ka' -y' -k -ka'% ay -y'% ay% %(lhik%)
 
-!! !!Analysis symbols
-!  ----------------
-!! The morphological analyses of wordforms for the Guazacapán
-!! language are presented in this system in terms of the following symbols.
-!! (It is highly suggested to follow existing standards when adding new tags).
+!SETB for nouns and verbs
+1sg 2sg 3sg 1pl 2pl 3pl
+ɨn- ka'- mu- muk- ka(ay)- mu(ay)-
 
-!! The parts-of-speech are:
- +N +A +Adv +V                                 !!≈
- +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
+!SetB Functions
+.subj .poss
 
-!! The parts of speech are further split up into:
- +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
+!SetC and D
+1sg- 2sg- 3sg- 1pl- 2pl- 3pl-
+!SetC (all of SetB except for 3sg and 3pl forms)
+%0- %0(ay)-
+!SetD (add of SetB except for 3sg and 3pl forms)
+a- a(ay)-
 
-!! The Usage extents are marked using following tags:
- +Err/Orth   
- +Use/-Spell 
+!Aspect for verbs
+.comp .incomp .vn -imp.iv
+-y'a 
 
-!! The nominals are inflected in the following Case and Number
- +Sg +Du +Pl
- +Ess +Nom +Gen +Acc +Ill +Loc +Com +Com/Sh
+!IVClassmarkers
+-act -aff
+-lha' -'
 
-!! The possession is marked as such:
- +PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3
-!! The comparative forms are:
- +Comp +Superl
-!! Numerals are classified under:
- +Attr +Card
- +Ord 
-!! Verb moods are:
- +Ind +Prs +Prt +Pot +Cond +Imprt
-!! Verb personal forms are:
- +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
-!! Other verb forms are
- +Inf +Ger +ConNeg +ConNegII +Neg +ImprtII +PrsPrc +PrfPrc +Sup +VGen +VAbess
+!Ghost Tags for IVs
+%{NC%} %{AFF%}
 
-! Abbreviated words are classified with:
- +ABBR +ACR 
-+Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
-!! Special symbols are classified with:
-+CLB +PUNCT +LEFT +RIGHT
-!! The verbs are syntactically split according to transitivity:
- +TV +IV
-!! Special multiword units are analysed with:
- +Multi
-!! Non-dictionary words can be recognised with:
- +Guess
+!=========!
+!==NOUNS==!
+!=========!
 
-!! Question and Focus particles:
- +Qst +Foc
+!Flags for Nouns
+@U.ALIEN.YES@
+@U.ALIEN.NO@
+@U.DIM.YES@
+@U.DIM.NO@
+@U.VAR.YES@
+@U.VAR.NO@
 
+!SetE = similar to Set A except 3sg and 3pl forms
+-1sg.poss -2sg.poss -3sg.poss -1pl.poss -2pl.poss -2pl.poss
+-h -h% lhik
 
-!! Semantics are classified with
- +Mal +Fem +Sur 
- +Plc 
- +Org
- +Obj
- +Ani
- +Hum
- +Plant
- +Group
- +Time 
- +Txt
- +Route
- +Measr 
- +Wthr
- +Build 
- +Edu
- +Veh
- +Clth
+!==============!
+!==ADJECTIVES==!
+!==============!
 
+!Flags for adjective possession
+@U.ADJ.YES@
+@U.ADJ.NO@
 
-!! Derivations are classified under the morphophonetic form of the suffix, the
-!! source and target part-of-speech.
- +V→N +V→V +V→A
- +Der/xxx
-
-
-!! Morphophonology
-!  ---------------
-!! To represent phonologic variations in word forms we use the following
-!! symbols in the lexicon files:
- {aä} {oö} {uü}
-
-!! And following triggers to control variation
- {front} {back}
-
-!! !!Flag diacritics
-!! We have manually optimised the structure of our lexicon using following
-!! flag diacritics to restrict morhpological combinatorics - only allow compounds
-!! with verbs if the verb is further derived into a noun again:
- @P.NeedNoun.ON@    !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
- @D.NeedNoun.ON@    !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
- @C.NeedNoun@       !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
-!! 
-!! For languages that allow compounding, the following flag diacritics are needed
-!! to control position-based compounding restrictions for nominals. Their use is
-!! handled automatically if combined with +CmpN/xxx tags. If not used, they will
-!! do no harm.
- @P.CmpFrst.FALSE@ !!≈ | @CODE@ | Require that words tagged as such only appear first
- @D.CmpPref.TRUE@  !!≈ | @CODE@ | Block such words from entering ENDLEX
- @P.CmpPref.FALSE@ !!≈ | @CODE@ | Block these words from making further compounds
- @D.CmpLast.TRUE@  !!≈ | @CODE@ | Block such words from entering R
- @D.CmpNone.TRUE@  !!≈ | @CODE@ | Combines with the next tag to prohibit compounding
- @U.CmpNone.FALSE@ !!≈ | @CODE@ | Combines with the prev tag to prohibit compounding
- @P.CmpOnly.TRUE@  !!≈ | @CODE@ | Sets a flag to indicate that the word has passed R
- @D.CmpOnly.FALSE@ !!≈ | @CODE@ | Disallow words coming directly from root.
-!! 
-!! Use the following flag diacritics to control downcasing of derived proper
-!! nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
-!! these flags. There exists a ready-made regex that will do the actual down-casing
-!! given the proper use of these flags.
- @U.Cap.Obl@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
- @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
+!Orthographic symbols
+ch
+ch'
+ts'
+l'
+k'
+p'
+t'
+w'
+r'
+n'
+m'
+y'
 
 LEXICON Root
-!! The word forms in Guazacapán language start from the lexeme roots of basic
-!! word classes, or optionally from prefixes:
-0   Nouns       ;
-0   Verbs       ;
-0   Adjectives  ;
-0   Pronouns    ;
-0   Numerals    ;
-0   Prefixes    ;
-    Punctuation ;
-    Symbols     ;
+@U.VERB.NO@   Nouns ;
+@U.VERB.YES@ Verbs ;
+@U.ALIEN.NO@ Adpositions ; ! Found in Seperate lexc files
+@U.ALIEN.NO@@U.ADJ.YES@ Adjectives ; ! Found in Seperate lexc files
+    Pronominals ; ! Found in Seperate lexc files
+    Particles ; ! Found in Seperate lexc files
 
-! vim: set ft=xfst-lexc:
+LEXICON Verbs ! Found in Seperate lexc files
+    Intransitive ;
+    Transitive ;
+
+LEXICON Nouns ! Found in Seperate lexc files
+    Diminutive ;
+@U.VAR.NO@@U.ALIEN.YES@ Alienable ;
+@U.VAR.NO@@U.ALIEN.NO@ Inalienable ;
+@U.VAR.YES@    Variable ;
+
+! Affixes found in a seperate lexc file

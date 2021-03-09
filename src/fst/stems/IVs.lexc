@@ -1,0 +1,16 @@
+
+LEXICON Intransitive
+@U.NOM.YES@@U.TV.NO@ SetB ;
+@U.COMP.YES@ SetC ;
+@U.COMP.NO@ SetD ;
+ IVclass ;
+
+LEXICON IVclass 
+@U.TV.NO@@U.ActIV.YES@ ActIVroots ;
+@U.TV.NO@@U.ActIV.NO@ AffIVroots ;
+
+LEXICON ActIVroots
+mɨka Aspect ;
+
+LEXICON AffIVroots
+yana Aspect ;
