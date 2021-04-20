@@ -9,8 +9,9 @@ licence, also detailed in the
 authors named in the AUTHORS file are available to grant other licencing
 choices.
 
-[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-xin-x-qda)](https://github.com/giellalt/lang-xin-x-qda/issues)
- [![Build Status](https://github.com/giellalt/lang-xin-x-qda/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-xin-x-qda/actions)
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-qda)](https://github.com/giellalt/lang-qda/issues)
+[![Build Status](https://github.com/giellalt/lang-qda/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-qda/actions)
+[![License](https://img.shields.io/github/license/giellalt/template-lang-qda)](https://raw.githubusercontent.com/giellalt/lang-qda/develop/LICENSE)
 
 Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-xin-x-qda)
 for the Guazacapán language by using the [Divvun Installer](http://divvun.no)
