@@ -1,6 +1,10 @@
 The Guazacapán morphology and tools
 ==========================================
 
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-qda)](https://github.com/giellalt/lang-qda/issues)
+[![Build Status](https://github.com/giellalt/lang-qda/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-qda/actions)
+[![License](https://img.shields.io/github/license/giellalt/lang-qda)](https://raw.githubusercontent.com/giellalt/lang-qda/develop/LICENSE)
+
 This repository contains finite state source files for the Guazacapán language,
 for building morphological analysers, proofing tools
 and dictionaries. The data and implementation are licenced under GPLv3
@@ -8,10 +12,6 @@ licence, also detailed in the
 [LICENCE](https://github.com/giellalt/lang-xin-x-qda/blob/develop/LICENCE). The
 authors named in the AUTHORS file are available to grant other licencing
 choices.
-
-[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-qda)](https://github.com/giellalt/lang-qda/issues)
-[![Build Status](https://github.com/giellalt/lang-qda/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-qda/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-qda)](https://raw.githubusercontent.com/giellalt/lang-qda/develop/LICENSE)
 
 Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-xin-x-qda)
 for the Guazacapán language by using the [Divvun Installer](http://divvun.no)
