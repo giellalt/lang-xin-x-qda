@@ -3,7 +3,7 @@ The Guazacapán morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-xin-x-qda)](https://github.com/giellalt/lang-xin-x-qda/issues)
 [![Build Status](https://github.com/giellalt/lang-xin-x-qda/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-xin-x-qda/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-xin-x-qda)](https://raw.githubusercontent.com/giellalt/lang-xin-x-qda/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-xin-x-qda)](https://github.com/giellalt/lang-xin-x-qda/blob/main/LICENSE)
 
 This repository contains finite state source files for the Guazacapán language,
 for building morphological analysers, proofing tools
