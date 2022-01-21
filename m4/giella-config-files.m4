@@ -5,7 +5,7 @@ AC_DEFUN([gt_CONFIG_FILES],
 [
 # List all non-script files processed by Autoconf.
 AC_CONFIG_FILES([Makefile \
-                 giella-qda.pc \
+                 giella-xin-x-qda.pc \
                  manifest.toml \
                  src/Makefile \
                  src/filters/Makefile \
