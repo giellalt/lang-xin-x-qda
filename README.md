@@ -30,8 +30,6 @@ Documentation
 
 Documentation can be found at:
 
-- [In source documentation generated with github
-    pages](https://gilellalt.github.io/lang-xin-x-qda/)
 -   <https://giellalt.uit.no/lang/xin-x-qdadoc/index.html>
 -   <https://giellalt.uit.no/index.html>
 
