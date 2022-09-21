@@ -30,7 +30,7 @@ Documentation
 
 Documentation can be found at:
 
--   <https://giellalt.uit.no/lang/xin-x-qdadoc/index.html>
+- [Language specific documentation](https://giellalt.github.io/lang-xin-x-qda/)
 -   <https://giellalt.uit.no/index.html>
 
 Core dependencies
