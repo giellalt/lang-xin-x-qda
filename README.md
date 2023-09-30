@@ -1,6 +1,7 @@
 The Guazacapán morphology and tools
 ==========================================
 
+![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-xin-x-qda%2Fgh-pages%2Flemmacount.json)
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-xin-x-qda)](https://github.com/giellalt/lang-xin-x-qda/issues)
 [![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-xin-x-qda/main/badge.svg)](https://github.com/giellalt/lang-xin-x-qda/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-xin-x-qda)](https://github.com/giellalt/lang-xin-x-qda/blob/main/LICENSE)
